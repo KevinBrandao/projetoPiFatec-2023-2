@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/assets/css/login.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/dashboard.css">
     <title>DASHBOARD</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -56,10 +56,10 @@
                 <th>Veículo</th>
                 <th>Ano</th>
                 <th>Placa</th>
-                <th>Data do Agendamento</th>
-                <th>Horário agendado</th>
+                <th>Data Agendamento</th>
+                <th>Horário</th>
                 <th>Descrição do problema</th>
-                <th>Alterar Agendamento</th>
+                <th>Alterar</th>
                 <th>Cancelar Agendamento</th>
               </tr>
               <tr v-for="row in allData">
@@ -76,7 +76,7 @@
                 </td>
                 <td>
                   <button type="button" name="delete" class="btn btn-danger btn-xs delete" @click="deleteData(row.veicId)">
-                    Cancelar agendamento
+                    Cancelar
                   </button>
                 </td>
               </tr>

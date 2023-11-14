@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
 
 :root {
   --cor-header:#775FE6;
@@ -9,109 +12,93 @@
   --fonte-secundaria: 'Krona One', sans-serif;
   --fonte-footer: Arial, Helvetica, sans-serif;
 }
-
-
-/* Estilo para o cabeçalho retangular da frente */
-.header {
-  background-color: var(--cor-header);
-  width: 100%;
-  color: var(--branco);
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  height: 120px;
-  justify-content: center; /* Centraliza horizontalmente */
-}
-
-.logo1 {
-  height: 80px;
-  width: 140px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-}
-.logo2 {
-  height: 80px;
-  width: 200px;
-  margin-bottom: 10px;
-}
-
-.img-user {
-  height: 45px;
-  width: 45px;
-  margin-right: 5%;
-  margin-top: -11px;
-}
-
-.div-login {
-  display: flex;
-  position: absolute;
-  right: 2%;
-}
-
-.text-login {
-  position: static;
-  color: var(--branco);
-  text-decoration: none;
-  font-size: 17px;
-  font-family: var(--fonte-principal);
-  font-weight: 200;
-  text-align: center;
-  position: relative;
-  top: 0%;
-  right: -15%;
-  margin-right: 20px;
-}
-
-.text-login:hover {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-  text-decoration: underline;
-}
-
-.sublinhado {
-  margin: 20px;
-  font-size: 18px;
-  margin-left: 60px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-  display: inline-flex;
-}
-
-/* Estilo para o trapézio isósceles verde claro */
-/* E estilo para toda a parte 1(embaixo do header)*/
-.trapezoid-container {
-  text-align: center;
-  position: relative fixed;
-  position:absolute;
-  margin-top: 20px;
-  left: 50%;
-  transform: translate(-50% , -50%);
-  background-color: var(--cor-trapesio); /* Verde claro */
-  padding: 40px 350px;
-  clip-path: polygon(23% 35%, 80% 35%, 73% 65%, 30% 65%); /* Define o trapézio invertido */
-  color: #181C1F; /* Texto preto */
-}
-/* barra para pesquisar placa e veiculo */
-/* .form-inline {
+  
+  
+  
+  /* Estilo para o cabeçalho retangular da frente */
+  .header {
+    background-color: var(--cor-header);
+    width: 100%;
+    color: var(--branco);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: center; /* Centraliza horizontalmente */
+  }
+  
+  .logo1 {
+    height: 80px;
+    width: 140px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  .logo2 {
+    height: 80px;
+    width: 200px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .img-user {
+    height: 45px;
+    width: 45px;
+    margin-right: 5%;
+    margin-top: -11px;
+  }
+  
+  .div-login {
+    display: flex;
+    position: absolute;
+    right: 5%;
+  }
+  
+  .text-login {
+    position: static;
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 17px;
+    font-family: var(--fonte-principal);
+    font-weight: 200;
     text-align: center;
-    margin-top: 10px;
-    padding: 1px 500px;
-} */
+    position: relative;
+    top: 0%;
+    right: -15%;
+    margin-right: 20px;
+  }
+  
+  .text-login:hover {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    text-decoration: underline;
+  }
+  
+  
+  /*Parte 1 - Netcar */
+  
+  .sublinhado {
+    margin: 20px;
+    font-size: 18px;
+    margin-left: 60px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    display: inline-flex;
+  }
+  
+  /* Estilo para o trapézio isósceles verde claro */
+  /* E estilo para toda a parte 1(embaixo do header)*/
+  .trapezoid-container {
+    text-align: center;
+    position: relative fixed;
+    position:absolute;
+    margin-top: 20px;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color: var(--cor-trapesio);
+    padding: 40px 350px;
+    clip-path: polygon(23% 35%, 80% 35%, 73% 65%, 30% 65%); /* Define o trapézio invertido */
+    color: var(--cor-texto-preto);
+  }
 
-.aba:hover {
-  text-decoration: underline;
-}
-.aba {
-  margin: 10px
-}
-
-.parte1 {
-  background-color: var(--cor-background);
-  height: 550px;
-  width: 100%;
-  margin-top:-20px;
-  /* height: 150px; */
-}
-
-nav ul {
+  nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -126,97 +113,173 @@ nav ul {
     color: var(--branco);
     text-decoration: none;
     font-weight: 600;
+    font-family: var(--fonte-principal);
   }  
 
-.parte2 {
-  background-image: url(/assets/img/img-parte2.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 550px;
-  width: 100%;
-  opacity: 0.5;
-}
+  
+  .aba:hover {
+    text-decoration: underline;
+  }
+  .aba {
+    margin: 10px;
+  }
+  
+  .parte01 {
+    background-color: var(--cor-background);
+    height: 700px;
+    width: 101%;
+    margin-top:-20px;
+  }
+  
+  label {
+    color: var(--cor-texto-preto);
+    position: relative;
+    font-family: var(--fonte-secundaria);
+    font-size: 12px;
+  }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: var(--branco);
-  margin: 0;
-  padding: 0;
+/* Ajustes para a tabela de auto-consulta do dashbord */
+
+.container {
+  max-width: 100%;
+  margin: 0 auto; /* Isso centralizará o conteúdo na página */
 }
 
 .panel-heading{
-  position: absolute;
-  top: 0px;
-  width: 88%;
-  padding: 18px 6% 60px 6%;
-  margin: 0 0 35px 0;
-  background-color: transparent;
-  background-image: linear-gradient(190deg, #1183DC 0%, #0A4D94 100%);
-}
-
-
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: var(--branco);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-
-h2 {
-  height: 150px;
-  /* width: 100%; */
-  margin: 0 auto;
-  max-width: 600px;
+  margin-top: 4%;
   text-align: center;
+  font-family: var(--fonte-principal);
 }
 
-.input-container {
+/* Alinhe a tabela no centro da página */
+.table-responsive {
+  margin: 0 auto;
+  font-family: var(--fonte-secundaria);
+  font-size: 12px;
+}
+
+/* Ajuste o estilo da tabela para melhorar a visualização */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px; /* Adicione espaço entre a tabela e o conteúdo acima */
+}
+
+/* Centralize o conteúdo das células da tabela */
+.table th, .table td {
+  text-align: center;
+  padding: 8px;
+}
+
+/* Ajuste da largura do campo Modelo */
+.table th:nth-child(1), .table td:nth-child(1) {
+  width: 10%;
+  border-right: 1px solid #ddd;
+}
+
+/* Ajuste da largura do campo Ano */
+.table th:nth-child(2), .table td:nth-child(2) {
+  width: 7%; 
+  border-right: 1px solid #ddd;
+}
+
+/* Ajuste da largura do campo Placa */
+.table th:nth-child(3), .table td:nth-child(3) {
+  width: 8%; 
+  border-right: 1px solid #ddd;
+}
+
+/* Ajuste da largura do campo Data Agendamento */
+.table th:nth-child(4), .table td:nth-child(4) {
+  width: 15%;
+  border-right: 1px solid #ddd;
+}
+
+/* Ajuste da largura do campo Horário */
+.table th:nth-child(5), .table td:nth-child(5) {
+  width: 10%; 
+  border-right: 1px solid #ddd;
+}
+
+/* Ajuste da largura do campo Descricao */
+.table th:nth-child(6), .table td:nth-child(6) {
+  width: 30%; 
+  border-right: 1px solid #ddd;
+}
+
+/* Ajuste da largura do campo Alterar */
+.table th:nth-child(7), .table td:nth-child(7) {
+  width: 10%; 
+  border-right: 1px solid #ddd;
+}
+
+/* Ajuste da largura do campo Cancelar */
+.table th:nth-child(8), .table td:nth-child(8) {
+  width: 10%; /* Ajuste conforme necessário */
+}
+
+/* Estilo para os botões de alterar e cancelar na tabela */
+.btn-xs {
+  padding: 5px 10px;
+}
+
+
+/* Estilo para o conteúdo do modal (tabela de alteração) */
+
+.modal-title{
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 20px;
-}
-
-.input-container input[type="text"] {
-  padding: 10px;
-  width: 70%;
-  border: 1px solid var(--cor-trapesio);
-  border-radius: 5px 0 0 5px;
-  outline: none;
-}
-
-.input-container button {
-  padding: 10px 20px;
-  background-color: #8ACFCD;
-  color: var(--branco);
-  border: none;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-}
-
-.result {
-  margin-top: 20px;
+  font-family: var(--fonte-principal);
+  font-size: 20px;
   text-align: center;
 }
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo para cada linha da tabela dentro do modal */
+.form-group {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+
+/* Estilo para o rótulo de cada campo */
+.form-group label {
+  margin-bottom: 5px;
+}
+
+/* Estilo para os campos de entrada */
+.form-group input {
+  width: 90%;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 2%;
+}
+
+
 
 /*FOOTER*/
 
 footer {
-  margin-top: auto;
-  height: 80px;
-  background-color: var(--cor-header);
-  color: var(--branco);
-  padding: 10px 0 0 0;
-  align-items: center;
-  justify-content: center;
-  width: 101%;
-}
-
-.textfooter {
-  margin-left: 30px;
-  margin-top: 20px;
-  font-size: 20px;
-  font-family: var(--fonte-footer);
-}
+    margin-top: 300px;
+    height: 80px;
+    background-color: var(--cor-header);
+    color: var(--branco);
+    padding: 10px 0 0 0;
+    align-items: center;
+    justify-content: center;
+    width: 101%;
+  }
+  
+  .textfooter {
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: var(--fonte-footer);
+  }

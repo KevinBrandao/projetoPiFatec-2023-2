@@ -194,26 +194,119 @@ p {
     font-size: 12px;
   }
 
-/* Estilos para o dashboard */
+/* Ajustes para a tabela de auto-consulta do dashbord */
 
-.panel-heading{
-  position: relative;
-  top: 30px;
-  width: 88%;
-  padding: 18px 6% 60px 6%;
-  margin: 0 0 35px 0;
-  background-color: transparent;
-  background-image: linear-gradient(190deg, #1183DC 0%, #0A4D94 100%);
+.container {
+  max-width: 100%;
+  margin: 0 auto; /* Isso centralizará o conteúdo na página */
 }
 
-.panel-body{
-  font-size: 12px;
-  color: var(--cor-texto-preto);
-  padding: 0px 0;
+.panel-heading{
+  margin-top: 4%;
+  text-align: center;
   font-family: var(--fonte-principal);
-  font-weight: 800;
-  text-align: justify;
-  padding-bottom: 10px;
+}
+
+/* Alinhe a tabela no centro da página */
+.table-responsive {
+  margin: 0 auto;
+  font-family: var(--fonte-secundaria);
+  font-size: 12px;
+}
+
+/* Ajuste o estilo da tabela para melhorar a visualização */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px; /* Adicione espaço entre a tabela e o conteúdo acima */
+}
+
+/* Centralize o conteúdo das células da tabela */
+.table th, .table td {
+  text-align: center;
+  padding: 8px;
+}
+
+/* Ajuste da largura do campo Modelo */
+.table th:nth-child(1), .table td:nth-child(1) {
+  width: 10%;
+  border-right: 1px solid #ddd;
+}
+
+/* Ajuste da largura do campo Ano */
+.table th:nth-child(2), .table td:nth-child(2) {
+  width: 7%; 
+  border-right: 1px solid #ddd;
+}
+
+/* Ajuste da largura do campo Placa */
+.table th:nth-child(3), .table td:nth-child(3) {
+  width: 8%; 
+  border-right: 1px solid #ddd;
+}
+
+/* Ajuste da largura do campo Data Agendamento */
+.table th:nth-child(4), .table td:nth-child(4) {
+  width: 15%;
+  border-right: 1px solid #ddd;
+}
+
+/* Ajuste da largura do campo Horário */
+.table th:nth-child(5), .table td:nth-child(5) {
+  width: 10%; 
+  border-right: 1px solid #ddd;
+}
+
+/* Ajuste da largura do campo Descricao */
+.table th:nth-child(6), .table td:nth-child(6) {
+  width: 30%; 
+  border-right: 1px solid #ddd;
+}
+
+/* Ajuste da largura do campo Alterar */
+.table th:nth-child(7), .table td:nth-child(7) {
+  width: 10%; 
+  border-right: 1px solid #ddd;
+}
+
+/* Ajuste da largura do campo Cancelar */
+.table th:nth-child(8), .table td:nth-child(8) {
+  width: 10%; /* Ajuste conforme necessário */
+}
+
+/* Estilo para os botões de alterar e cancelar na tabela */
+.btn-xs {
+  padding: 5px 10px;
+}
+
+/* Ajustes para o model de alteração de dados do dashboard */
+
+/* Estilo para o conteúdo do modal (tabela de alteração) */
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo para cada linha da tabela dentro do modal */
+.form-group {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Estilo para o rótulo de cada campo */
+.form-group label {
+  margin-bottom: 5px;
+}
+
+/* Estilo para os campos de entrada */
+.form-group input {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
   

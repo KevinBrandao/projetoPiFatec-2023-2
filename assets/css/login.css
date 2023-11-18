@@ -13,8 +13,6 @@
   --fonte-footer: Arial, Helvetica, sans-serif;
 }
   
-  
-  
   /* Estilo para o cabeçalho retangular da frente */
   .header {
     background-color: var(--cor-header);
@@ -33,6 +31,7 @@
     margin-right: 10px;
     margin-bottom: 20px;
   }
+  
   .logo2 {
     height: 80px;
     width: 200px;
@@ -139,9 +138,6 @@
     position: relative;
   }
   
-  
-
-
   /* formatando o cabeçalho dos formulários */
   h1 {
     font-size: 48px;

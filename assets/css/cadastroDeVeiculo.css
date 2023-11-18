@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --cor-header:#775FE6;
   --cor-trapesio: #8ACFCD;
@@ -117,12 +124,11 @@ nav ul {
     align-items: center;
   }
   
-  nav ul li {
-    margin: 0 10px;
-  }
-  nav ul li a {
-    color: #ffffff;
+nav ul li {
+    color: var(--branco);
     text-decoration: none;
+    font-weight: 600;
+    font-family: var(--fonte-principal);
   }  
 
 .parte2 {
